@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geyve Selim Oto Araç Kurtarma</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       /* WhatsApp Icon */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background: #25d366;
+    color: white;
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+    background: #1ebe57;
+    transform: scale(1.1);
+}
+
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+
+        .modal .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Slideshow */
+        .slideshow {
+            position: relative;
+            overflow: hidden;
+            height: 300px;
+        }
+
+        .slideshow img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: slide 16s infinite;
+        }
+
+        @keyframes slide {
+            0% { opacity: 1; }
+            5.88% { opacity: 0; }
+            11.76% { opacity: 1; }
+        }
+
+        /* Tag Section */
+        .tags {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-top: 1px solid #ccc;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .tags h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .tags p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .tags p span {
+            background: #eaeaea;
+            padding: 5px 10px;
+            margin: 5px;
+            display: inline-block;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            color: #333;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">SELİM OTO KURTARICI</div>
+            <div class="contact">
+              <p><strong>Telefon:</strong> <a href="tel:+905464633849">0546 463 38 49</a></p>
+              <span>Yardımınıza İhtiyacınız Olduğu Anda</span>
+            </div>
+
+
+        <nav>
+            <ul>
+                <li><a href="#anasayfa">Ana Sayfa</a></li>
+                <li><a href="#hakkimizda">Hakkımızda</a></li>
+                <li><a href="#hizmetler">Hizmetler</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#konum">Konum</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Slideshow Section -->
+        <section id="anasayfa" class="slideshow">
+                <img src="WhatsApp Image 2024-12-05 at 14.31.14.jpeg.jpeg" alt="Slideshow 1" >
+                <img src="WhatsApp Image 2024-12-05 at 14.31.18 (1).jpeg.jpeg" alt="Slideshow 2">
+                <img src="WhatsApp Image 2024-12-05 at 14.31.18 (3).jpeg" alt="Slideshow 3">
+                <img src="WhatsApp Image 2024-12-05 at 14.31.18.jpeg" alt="Slideshow 4">
+                <img src="WhatsApp Image 2024-12-05 at 14.31.19.jpeg" alt="Slideshow 5">
+                <img src="WhatsApp Image 2024-12-05 at 14.31.21.jpeg" alt="Slideshow 6">
+                <img src="WhatsApp Image 2024-12-05 at 14.31.25 (1).jpeg" alt="Slideshow 7">
+                <img src="WhatsApp Image 2024-12-05 at 14.31.25 (2).jpeg" alt="Slideshow 8">
+                <img src="WhatsApp Image 2024-12-05 at 14.31.25.jpeg" alt="Slideshow 9">
+                <img src="WhatsApp Image 2024-12-05 at 14.31.26.jpeg" alt="Slideshow 10">
+                <img src="WhatsApp Image 2024-12-05 at 14.31.27.jpeg" alt="Slideshow 11">
+                <img src="WhatsApp Image 2024-12-05 at 14.31.28 (1).jpeg" alt="Slideshow 12">
+                <img src="WhatsApp Image 2024-12-05 at 14.31.28.jpeg" alt="Slideshow 13">
+                <img src="WhatsApp Image 2024-12-05 at 14.31.29.jpeg" alt="Slideshow 14">
+                <img src="WhatsApp Image 2024-12-05 at 14.31.30 (1).jpeg" alt="Slideshow 15">
+                <img src="WhatsApp Image 2024-12-05 at 14.31.30.jpeg" alt="Slideshow 16">
+
+        </section>
+
+        <section id="hakkimizda">
+            <h2>Hakkımızda</h2>
+            <p>
+                Geyve Selim Oto Kurtarma, yılların deneyimi ve uzman kadrosuyla Sakarya bölgesinde
+                oto kurtarma ve yol yardım hizmetleri sunmaktadır. Araç sorunlarınızı çözmek için
+                7 gün 24 saat hızlı ve güvenilir hizmet veriyoruz. Müşteri memnuniyetini ön planda
+                tutarak, siz değerli müşterilerimize ekonomik çözümler sunuyoruz. İster uzun yol ister
+                şehir içi yolda kalın, biz her zaman yanınızdayız!
+            </p>
+            <div class="features">
+                <div class="feature">
+                    <h3>Profesyonel Hizmet</h3>
+                    <p>Alanında uzman ekiplerle güvenilir çözümler sunuyoruz.</p>
+                </div>
+                <div class="feature">
+                    <h3>Hızlı Müdahale</h3>
+                    <p>Çağrınızdan hemen sonra en kısa sürede yanınızdayız.</p>
+                </div>
+                <div class="feature">
+                    <h3>Uygun Fiyat Garantisi</h3>
+                    <p>Her bütçeye uygun fiyatlarla kaliteli hizmet sağlıyoruz.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="hizmetler">
+            <h2>Hizmetlerimiz</h2>
+            <ul>
+                <li>Yolda kalan araç kurtarma</li>
+                <li>Çekici hizmeti</li>
+                <li>Lastik değişimi</li>
+                <li>Acil yakıt desteği</li>
+            </ul>
+        </section>
+
+       
+        <section id="iletisim">
+            <!-- İletişim Formu -->
+            <div class="contact-form">
+                <h2>Bize Ulaşın</h2>
+                <p>Her türlü yol yardım ihtiyaçlarınız için bizimle iletişime geçebilirsiniz.</p>
+                <form action="https://formspree.io/f/xqakodzj" method="POST">
+                    <label for="name">Adınız:</label>
+                    <input id="name" type="text" name="name" placeholder="Adınız" required>
+                    <label for="email">E-posta:</label>
+                    <input id="email" type="email" name="email" placeholder="E-posta" required>
+                    <label for="subject">Konu:</label>
+                    <input id="subject" type="text" name="subject" placeholder="Konu">
+                    <label for="message">Mesajınız:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Mesajınız" required></textarea>
+                    <input type="hidden" name="_redirect" value="https://siteniz.com/tesekkurler.html">
+                    <button type="submit" class="btn">Gönder</button>
+                </form>
+                <div class="contact-info">
+                    <p><strong>Telefon:</strong> <a href="tel:+905464633849">0546 463 38 49</a></p>
+                    <p><strong>E-posta:</strong> <a href="mailto:selimcetinkaya5445@gmail.com">selimcetinkaya5445@gmail.com</a></p>
+                    <p><strong>Adres:</strong> İnciksuyu Mah. Geyve Küçük Sanayi Sitesi 1015.Sk. 4E 54700 Geyve/Sakarya</p>
+                    <a href="https://wa.me/905464633849" target="_blank" class="btn whatsapp-btn"> WhatsApp'tan Mesaj Gönder / Konum At</a>
+                </div>
+            </div>
+
+            <section id="konum">
+                <h2>Konum</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3034.012299282775!2d30.266897276015058!3d40.49711107142678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDI5JzQ5LjYiTiAzMMKwMTYnMTAuMSJF!5e0!3m2!1str!2str!4v1734179184241!5m2!1str!2str" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        
+          
+        </section>
+
+        <section id="galeri">
+            <h2>Galeri</h2>
+            <div class="gallery">
+                <img src="WhatsApp Image 2024-12-05 at 14.31.14.jpeg.jpeg" alt="Slideshow 1" onclick="openModal(this.src)" >
+                <img src="WhatsApp Image 2024-12-05 at 14.31.18 (1).jpeg.jpeg" alt="Slideshow 2" onclick="openModal(this.src)" >
+                <img src="WhatsApp Image 2024-12-05 at 14.31.18 (3).jpeg" alt="Slideshow 3" onclick="openModal(this.src)">
+                <img src="WhatsApp Image 2024-12-05 at 14.31.18.jpeg" alt="Slideshow 4" onclick="openModal(this.src)">
+                <img src="WhatsApp Image 2024-12-05 at 14.31.19.jpeg" alt="Slideshow 5" onclick="openModal(this.src)">
+                <img src="WhatsApp Image 2024-12-05 at 14.31.21.jpeg" alt="Slideshow 6" onclick="openModal(this.src)">
+                <img src="WhatsApp Image 2024-12-05 at 14.31.25 (1).jpeg" alt="Slideshow 7"onclick="openModal(this.src)" >
+                <img src="WhatsApp Image 2024-12-05 at 14.31.25 (2).jpeg" alt="Slideshow 8"onclick="openModal(this.src)" >
+                <img src="WhatsApp Image 2024-12-05 at 14.31.25.jpeg" alt="Slideshow 9" onclick="openModal(this.src)">
+                <img src="WhatsApp Image 2024-12-05 at 14.31.26.jpeg" alt="Slideshow 10" onclick="openModal(this.src)">
+                <img src="WhatsApp Image 2024-12-05 at 14.31.27.jpeg" alt="Slideshow 11"onclick="openModal(this.src)">
+                <img src="WhatsApp Image 2024-12-05 at 14.31.28 (1).jpeg" alt="Slideshow 12" onclick="openModal(this.src)">
+                <img src="WhatsApp Image 2024-12-05 at 14.31.28.jpeg" alt="Slideshow 13"onclick="openModal(this.src)" >
+                <img src="WhatsApp Image 2024-12-05 at 14.31.29.jpeg" alt="Slideshow 14"onclick="openModal(this.src)" >
+                <img src="WhatsApp Image 2024-12-05 at 14.31.30 (1).jpeg" alt="Slideshow 15" onclick="openModal(this.src)">
+                <img src="WhatsApp Image 2024-12-05 at 14.31.30.jpeg" alt="Slideshow 16"onclick="openModal(this.src)" >
+
+                <!-- Daha fazla resim buraya eklenebilir -->
+            </div>
+        </section>
+
+       
+    </main>
+
+
+    <!-- Tag Bölümü -->
+    <div class="tags">
+        <h3>Etiketler</h3>
+        <p>
+            <span>oto kurtarma</span>
+            <span>araç çekici</span>
+            <span>yol yardım</span>
+            <span>lastik değişimi</span>
+            <span>gece oto kurtarma</span>
+            <span>acil oto kurtarma</span>
+            <span>çekici hizmeti</span>
+            <span>araba kurtarma</span>
+            <span>Geyve yol yardım</span>
+            <span>Geyve çekici</span>
+        </p>
+
+    <footer>
+        <p>&copy; 2024 Oto Araç Kurtarma. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <!-- WhatsApp Icon -->
+<a href="https://wa.me/905464633849" class="whatsapp-icon" target="_blank" aria-label="WhatsApp">
+    <img src="WhatsApp_icon.png" alt="WhatsApp" style="width: 25px; height: 25px;">
+</a>
+
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modal-image" src="" alt="Büyük Resim">
+    </div>
+
+    <script>
+        // Modal açma fonksiyonu
+        function openModal(src) {
+            const modal = document.getElementById('modal');
+            const modalImage = document.getElementById('modal-image');
+            modal.style.display = 'flex';
+            modalImage.src = src;
+        }
+
+        // Modal kapama fonksiyonu
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            modal.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+
+
+
+
